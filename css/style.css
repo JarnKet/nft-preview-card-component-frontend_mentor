@@ -36,8 +36,6 @@
 
   background-color: var(--card_BG);
   border-radius: 1rem;
-
-  margin: 0 auto;
   padding: 1.3rem;
 
   width: 330px;
@@ -95,7 +93,7 @@
   font-size: 1.2rem;
   font-weight: 600;
 
-  cursor: pointer;
+  text-decoration: none;
 }
 .title:hover {
   color: var(--cyan);
@@ -137,8 +135,9 @@
 .clock {
   width: 15px;
 }
-hr {
-  color: var(--line);
+.border-line {
+  width: 100%;
+  border-bottom: 1px solid var(--line);
 }
 .creator {
   display: flex;
@@ -180,6 +179,11 @@ hr {
 .attribution > a {
   text-decoration: none;
   color: var(--cyan);
+}
+.view-hover,
+.title,
+.profile-info > a {
+  transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 375px) {
   .container {
